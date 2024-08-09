@@ -7,13 +7,12 @@ from sklearn.metrics import r2_score
 def linear_regression(features, target) -> tuple[lm.LinearRegression, r2_score]:
     """
     This function takes the feature data, target data, 
-    and it creates a linear regression model.
+    and it creates a linear regression model, and it's r2 score.
     Args:
         features: Pandas Dataframe
         target: Pandas Dataframe
-        max_leaf_nodes: int
     Returns:
-        LinearRegression model, Mean Absolue Error (MAE)
+        LinearRegression model, r2 score
     """
 
     # Train/Test split the data
