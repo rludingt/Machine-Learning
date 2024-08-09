@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
-def decision_tree_regressor(features, target, max_leaf_nodes) -> tuple[DecisionTreeRegressor, int]:
+def decision_tree_regressor(features, target, max_leaf_nodes) -> tuple[DecisionTreeRegressor, mean_absolute_error]:
     """
     This function takes the feature data, target data, and a list of max_leaf_node integers,
     and it trains a DecisionTreeRegressor model. The function will return the model, and it's MAE.

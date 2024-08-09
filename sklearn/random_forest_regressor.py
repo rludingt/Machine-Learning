@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
-def random_forest_regressor(features, target) -> RandomForestRegressor:
+def random_forest_regressor(features, target) -> tuple[RandomForestRegressor, mean_absolute_error]:
     """
     This function takes the feature data, target data,
     and it trains a RandomForestRegressor model. 
